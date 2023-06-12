@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "Wild West Gold",
+  "description": "Helper for West Gold games 1xBet",
+  "version": "1.0.4",
+
+"icons": {
+        "48": "./images/icon.png"
+    },
+
+"action": {
+ "default_icon": "./images/icon.png",
+       "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches":["http://*/*","https://*/*"],
+      "js": [ "jquery.min.js","popup.js" ]
+    }
+  ]
+}
